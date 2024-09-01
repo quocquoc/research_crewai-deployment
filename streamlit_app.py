@@ -9,6 +9,7 @@ os.environ["SERPER_API_KEY"] = st.secrets["SERPER_API_KEY"]
 with st.sidebar:
     st.header('Enter Technology Research Details')
     topic = st.text_input("Technology topic of your research:")
+    st.write(f"topic is: {topic}")
 
 if st.button('Run Research'):
     if not topic:

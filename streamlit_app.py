@@ -15,7 +15,7 @@ if st.button('Run Research'):
         st.error("Please fill all the fields.")
     else:
         topic = topic
-        research_crew = ResearchCrew(inputs)
+        research_crew = ResearchCrew(topic)
         result = research_crew.run()
         st.subheader("Results of your research project:")
         st.write(result)

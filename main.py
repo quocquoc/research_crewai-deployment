@@ -24,7 +24,7 @@ class ResearchCrew:
         research_task = self.tasks.research_task(news_researcher, self.topic, 2)
         writing_task = self.tasks.writing_task(content_writer)
         quality_check_task = self.tasks.quality_check_task(content_quality)
-        translation_task = self.tasks.senior_translator(content_quality, writing_task)
+        translation_task = self.tasks.translation_task(content_quality, writing_task)
 
         # Form the crew with defined agents and tasks
         crew = Crew(
